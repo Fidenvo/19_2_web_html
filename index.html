@@ -8,22 +8,54 @@ Không dán code vào editor chính. Hãy tự gõ, sau đó copy sang editor on
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TODO</title>
+  <title>Trang kiểm tra tài nguyên</title>
   <!-- TODO: thêm CSS nội bộ hoặc liên kết css/style.css nếu đề yêu cầu -->
-  <link rel="stylesheet" href="style.css">
+  <link rel ="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- TODO 1: viết cấu trúc HTML chính -->
-     <h1>Kiểm tra đường dẫn CSS và JS</h1>
+    <!-- Đầu trang -->
+  <header>
+    <h1>Kiểm tra tài nguyên CSS và JS</h1>
+    <p>Hướng dẫn kiểm tra đường dẫn và lỗi bằng DevTools</p>
+  </header>
 
-  <p>Nếu trang không có màu hoặc không có hiệu ứng, hãy kiểm tra lại:</p>
+  <!-- Nội dung chính -->
+  <main>
 
-  <ul>
-    <li>Bấm F12 để mở DevTools</li>
-    <li>Chọn tab Console, xem có lỗi đỏ không</li>
-    <li>Chọn tab Network, xem CSS và JS có load được không</li>
-    <li>Kiểm tra href và src có đúng đường dẫn không</li>
-  </ul>
+    <section>
+      <h2>CSS không hoạt động?</h2>
+      <p>Kiểm tra lại thuộc tính <strong>href</strong> trong thẻ link có đúng đường dẫn không.</p>
+      <ul>
+        <li>Ví dụ đúng: <code>href="css/style.css"</code></li>
+        <li>File CSS phải nằm trong thư mục <code>css/</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>JS không hoạt động?</h2>
+      <p>Kiểm tra lại thuộc tính <strong>src</strong> trong thẻ script có đúng đường dẫn không.</p>
+      <ul>
+        <li>Ví dụ đúng: <code>src="js/script.js"</code></li>
+        <li>File JS phải nằm trong thư mục <code>js/</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Cách dùng DevTools</h2>
+      <ul>
+        <li>Bấm <strong>F12</strong> để mở DevTools</li>
+        <li>Chọn tab <strong>Console</strong> — xem có lỗi đỏ không</li>
+        <li>Chọn tab <strong>Network</strong> — xem CSS và JS có load được không</li>
+        <li>File báo lỗi 404 nghĩa là sai đường dẫn</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Chân trang -->
+  <footer>
+    <p>© 2025 Võ Thành Sang</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
